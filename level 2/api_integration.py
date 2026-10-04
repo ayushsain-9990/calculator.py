@@ -16,6 +16,7 @@ def fetch_crypto_prices():
         print("\n💰 --- LIVE CRYPTO PRICES ---")
         for coin, prices in data.items():
             print(f"• {coin.capitalize()}:")
+            
             print(f"   USD: ${prices['usd']:,}")
             print(f"   INR: ₹{prices['inr']:,}\n")
             
