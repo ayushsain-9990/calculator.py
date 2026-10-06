@@ -1,0 +1,6 @@
+<h2>Welcome, {{ user.username }}! 🎉</h2>
+<p>You are logged into Django Auth App.</p>
+<form action="{% url 'logout' %}" method="post">
+    {% csrf_token %}
+    <button type="submit">Logout</button>
+</form>
